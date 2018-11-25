@@ -9,8 +9,8 @@ body {
 }
 
 .wrapper {
-  margin: 0 auto;
-  width: 1000px;
+  margin: auto;
+  width: 80%;
 }
 
 nav {
@@ -70,4 +70,26 @@ ul li a:hover {
 .footer {
   grid-column: span 12;
   background-color: lightblue;
+}
+
+.first-column {
+  background-color: lightgreen;
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  margin: 0px;
+}
+
+.gutter {
+  background-color: lightblue;
+  display: inline-block;
+  width: 2%;
+  margin: 0;
+}
+
+.column {
+  background-color: pink;
+  display: inline-block;
+  width: 48%;
+  vertical-align: text-top;
 }
