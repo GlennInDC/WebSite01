@@ -42,3 +42,32 @@ ul li a {
 ul li a:hover {
   color: red;
 }
+
+/* The CSS for the grid example follows. */
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 100px 40px;
+  width: 50%;
+}
+
+.header {
+  grid-column: span 12;
+  background-color: yellow;
+}
+
+.menu {
+  grid-column: span 4;
+  background-color: red;
+}
+
+.content {
+  grid-column: span 8;
+  background-color: green;
+}
+
+.footer {
+  grid-column: span 12;
+  background-color: lightblue;
+}
