@@ -55,6 +55,11 @@ ul li a:hover {
 .header {
   grid-column: span 12;
   background-color: yellow;
+  transition-duration: 5s;
+}
+
+.header:hover {
+  background-color: orange;
 }
 
 .menu {
@@ -65,6 +70,11 @@ ul li a:hover {
 .content {
   grid-column: span 8;
   background-color: green;
+  transition-duration: 5s;
+}
+
+.content:hover {
+  background-color: orange;
 }
 
 .footer {
