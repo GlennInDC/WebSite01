@@ -1,6 +1,12 @@
 /*CSS for the accordion example */
-h1+h2 {
-  color: blue;
+h2 {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+div.accordion {
+  transition: max-height 500ms, opacity 500ms ease-in-out;
+  max-height: 1000px;
 }
 
 div input[type=checkbox] {
@@ -9,16 +15,31 @@ div input[type=checkbox] {
   width: 100%;
   height: 100%;
   z-index: 1;
+  opacity: 0;
 }
 
-input[type=checkbox] {
-  width: 100%;
+input[type=checkbox]:checked+h2::after {
+  content: "Show Text";
+  color: white;
+  margin-left: 15px;
+  font-size: 12px;
+  background-color: blue;
+  padding: 4px;
 }
 
-input[type=checkbox]:checked+p {
-  background-color: red;
+input[type=checkbox]+h2::after {
+  content: "Hide Text";
+  color: white;
+  margin-left: 15px;
+  font-size: 12px;
+  background-color: blue;
+  padding: 4px;
 }
 
-input[type=checkbox]:checked+h2+p {
-  background-color: red;
+input[type=checkbox]:checked~div.accordion {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 0;
+  opacity: 0;
+  /*transform: translate(0, 50%);*/
 }
