@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>collapsible content</title>
+    <style>
+    	section p {
+    		display: none;
+    		text-align: center;
+    	}
+    	section a {
+    		text-align: center;
+    		color: black;
+    		text-decoration: none;
+    	}
+    	section a:hover {
+    		text-decoration: underline;
+    	}
+    	section:target p {
+    		display: block;
+    	}
+
+	</style>
+ </head>
+ <body>
+ <div id="accordion">
+ 	<section id="item1">
+	 	<a href="#item1"><h2>Desired Text Here</h2></a>
+		<p>
+			Ya like sliders? Lame. Because guess what little buddy? No one cares or clicks.
+
+			Let me lay some science on you – 90% of sliders on the web are pointless fluff. Google it. But, on a purely presentational level, a nice little background image animation certainly has merit. Plus, considering the wide-ranging support for css animations (keyframes, transforms, transitions), it’s easy to accomplish this UX pattern with a purely css approach (no javascript).
+
+			A Pure CSS Keyframes Slider
+			So, today, let’s use css keyframes to create a full height slider that fades between images all sexy like. Additionally, we’ll deliver smaller images for mobile to keep them load times fast. For the sake of scalability (and non retardery), we’ll be using SCSS and Bourbon.
+
+			1. Create Images for Mobile and Desktop
+			First, create a series of images for our slider, at both desktop and mobile sizes. For desktop, I like to use images around 2000×1350. For mobile, images around 800×1200 will work great.
+
+			The demo uses images from a great free stock site: Pexels
+
+			2. Set Up a Banner Section
+			With images ready to rock, time to create a banner section to house our content and assign the background-images. For this demo, we’ll be fading between 3 images, so let’s set up an unordered list with 3 empty list items. Essentially, we’ll apply our images to each list item via the :nth-child() selector, then use a simple opacity keyframe animation.
+		</p>
+	</section>
+</div>
+<div id="accordion">
+ 	<section id="item2">
+	 	<a href="#item2"><h2>Desired Text Here</h2></a>
+		<p>
+			Ya like sliders? Lame. Because guess what little buddy? No one cares or clicks.
+
+			Let me lay some science on you – 90% of sliders on the web are pointless fluff. Google it. But, on a purely presentational level, a nice little background image animation certainly has merit. Plus, considering the wide-ranging support for css animations (keyframes, transforms, transitions), it’s easy to accomplish this UX pattern with a purely css approach (no javascript).
+
+			A Pure CSS Keyframes Slider
+			So, today, let’s use css keyframes to create a full height slider that fades between images all sexy like. Additionally, we’ll deliver smaller images for mobile to keep them load times fast. For the sake of scalability (and non retardery), we’ll be using SCSS and Bourbon.
+
+			1. Create Images for Mobile and Desktop
+			First, create a series of images for our slider, at both desktop and mobile sizes. For desktop, I like to use images around 2000×1350. For mobile, images around 800×1200 will work great.
+
+			The demo uses images from a great free stock site: Pexels
+
+			2. Set Up a Banner Section
+			With images ready to rock, time to create a banner section to house our content and assign the background-images. For this demo, we’ll be fading between 3 images, so let’s set up an unordered list with 3 empty list items. Essentially, we’ll apply our images to each list item via the :nth-child() selector, then use a simple opacity keyframe animation.
+		</p>
+	</section>
+</div>
+ </body>
+ </html>
