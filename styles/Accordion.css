@@ -22,7 +22,7 @@ input[type=checkbox]:checked+h2::after {
   content: "Show Text";
   color: white;
   margin-left: 15px;
-  font-size: 12px;
+  font-size: 10px;
   background-color: blue;
   padding: 4px;
 }
@@ -31,7 +31,7 @@ input[type=checkbox]+h2::after {
   content: "Hide Text";
   color: white;
   margin-left: 15px;
-  font-size: 12px;
+  font-size: 10px;
   background-color: blue;
   padding: 4px;
 }
