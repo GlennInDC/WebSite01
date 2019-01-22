@@ -76,3 +76,27 @@ span.psw {
     width: 100%;
   }
 }
+
+div.loginTag {
+  font-size: 18px;
+  color: darkred;
+  opacity: 0;
+  animation-name: showLoginTag;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes showLoginTag {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
