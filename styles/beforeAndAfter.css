@@ -1,0 +1,29 @@
+.beforeAndAfter {
+  background-color: purple;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  transform: rotate(45deg);
+  top: 150px;
+  left: 100px;
+}
+
+.beforeAndAfter::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: purple;
+  bottom: 125px;
+}
+
+.beforeAndAfter::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: purple;
+  right: 125px;
+}
