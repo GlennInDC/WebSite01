@@ -1,0 +1,33 @@
+div {
+  border-style: solid;
+  height: 300px;
+  width: 300px;
+}
+
+.table {
+  display: table;
+}
+
+.table p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.absolute {
+  position: relative;
+}
+
+.absolute p {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.margins {
+  display: grid;
+}
+
+.margins p {
+  margin: auto;
+}
