@@ -1,5 +1,10 @@
+:root {
+  --color1: red;
+}
+
 p {
   text-align: center;
+  color: var(--color1);
 }
 
 div {
